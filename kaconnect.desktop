@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Kaconnect
+Comment=A frontend for the aconnect utility
+Comment[pl]=Nakładka graficzna na aconnect
+Exec=/usr/bin/kaconnect
+Icon=
+Terminal=0
+Type=Application
+Categories=Application;AudioVideo;
