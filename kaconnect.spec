@@ -17,12 +17,12 @@ Requires:	alsa-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Kaconnect is a QT version of the aconnect utility for the ALSA
+Kaconnect is a Qt version of the aconnect utility for the ALSA
 sequencer subsystem.
 
 %description -l pl
 Kaconnect jest graficzn± nak³adk± dla podsystemu sekwencera ALSA
-opart± o bibliotekê QT.
+opart± o bibliotekê Qt.
 
 %prep
 %setup -q
