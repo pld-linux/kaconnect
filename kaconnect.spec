@@ -21,8 +21,8 @@ Kaconnect is a QT version of the aconnect utility for the ALSA
 sequencer subsystem.
 
 %description -l pl
-Kaconnect jest graficzn± nak³adk± opart± o bibliotekê QT dla
-subsystemu sekwencera ALSA.
+Kaconnect jest graficzn± nak³adk± dla subsystemu sekwencera ALSA
+opart± o bibliotekê QT.
 
 %prep
 %setup -q
