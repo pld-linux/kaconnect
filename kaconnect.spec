@@ -12,8 +12,8 @@ URL:		http://www.suse.de/~mana/kalsatools.html
 BuildRequires:	alsa-lib-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	qt-devel >= 3.0.5
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	alsa-utils
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Kaconnect is a QT version of the aconnect utility for the ALSA
