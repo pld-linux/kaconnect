@@ -1,0 +1,62 @@
+diff -aurN kaconnect-1.1.1.orig/make_kaconnect kaconnect-1.1.1/make_kaconnect
+--- kaconnect-1.1.1.orig/make_kaconnect	2002-07-16 13:00:36.000000000 +0200
++++ kaconnect-1.1.1/make_kaconnect	2003-06-21 12:59:34.000000000 +0200
+@@ -1,4 +1,4 @@
+-QT_LIB_DIR=-L/usr/lib/qt3/lib
++QT_LIB_DIR=-L/usr/lib
+ 
+ kaconnect: kaconnect.o alsa_access.o alsa_access.moc.o connector.o connector.moc.o portlistbox.o portlistbox.moc.o 
+ 	gcc kaconnect.o alsa_access.o alsa_access.moc.o \
+@@ -6,41 +6,35 @@
+ 	portlistbox.o portlistbox.moc.o \
+ 	-o kaconnect \
+ 	$(QT_LIB_DIR) \
++	$(LDFLAGS) \
+ 	-lqt-mt -lasound -lm
+ 
+ kaconnect.o: kaconnect.cpp
+-	gcc -c kaconnect.cpp \
+-	-I/usr/lib/qt3/include 
++	gcc -c kaconnect.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ alsa_access.o: alsa_access.h alsa_access.cpp  
+-	gcc -c alsa_access.cpp \
+-	-I/usr/lib/qt3/include
++	gcc -c alsa_access.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ alsa_access.moc.o: alsa_access.moc.cpp
+-	gcc -c alsa_access.moc.cpp \
+-	-I/usr/lib/qt3/include
++	gcc -c alsa_access.moc.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ alsa_access.moc.cpp: alsa_access.h alsa_access.cpp 
+-	/usr/lib/qt3/bin/moc alsa_access.h -o alsa_access.moc.cpp
++	/usr/bin/moc alsa_access.h -o alsa_access.moc.cpp
+ 
+ connector.o: connector.h connector.cpp
+-	gcc -c connector.cpp \
+-	-I/usr/lib/qt3/include
++	gcc -c connector.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ connector.moc.o: connector.moc.cpp
+-	gcc -c connector.moc.cpp \
+-	-I/usr/lib/qt3/include
++	gcc -c connector.moc.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ connector.moc.cpp: connector.h connector.cpp portlistbox.h
+-	/usr/lib/qt3/bin/moc connector.h -o connector.moc.cpp
++	/usr/bin/moc connector.h -o connector.moc.cpp
+ 
+ portlistbox.o: portlistbox.h portlistbox.cpp
+-	gcc -c portlistbox.cpp \
+-	-I/usr/lib/qt3/include
++	gcc -c portlistbox.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ portlistbox.moc.o: portlistbox.moc.cpp
+-	gcc -c portlistbox.moc.cpp \
+-	-I/usr/lib/qt3/include
++	gcc -c portlistbox.moc.cpp -I/usr/include/qt $(OPTFLAGS)
+ 
+ portlistbox.moc.cpp: portlistbox.h portlistbox.cpp 
+-	/usr/lib/qt3/bin/moc portlistbox.h -o portlistbox.moc.cpp
++	/usr/bin/moc portlistbox.h -o portlistbox.moc.cpp
