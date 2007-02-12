@@ -1,5 +1,5 @@
 Summary:	A frontend for the aconnect utility
-Summary(pl):	Nak³adka graficzna dla aconnect
+Summary(pl.UTF-8):   NakÅ‚adka graficzna dla aconnect
 Name:		kaconnect
 Version:	1.1.1
 Release:	0.2
@@ -20,9 +20,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Kaconnect is a Qt version of the aconnect utility for the ALSA
 sequencer subsystem.
 
-%description -l pl
-Kaconnect jest graficzn± nak³adk± dla podsystemu sekwencera ALSA
-opart± o bibliotekê Qt.
+%description -l pl.UTF-8
+Kaconnect jest graficznÄ… nakÅ‚adkÄ… dla podsystemu sekwencera ALSA
+opartÄ… o bibliotekÄ™ Qt.
 
 %prep
 %setup -q
