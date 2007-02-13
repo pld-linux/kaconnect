@@ -1,5 +1,5 @@
 Summary:	A frontend for the aconnect utility
-Summary(pl.UTF-8):   Nakładka graficzna dla aconnect
+Summary(pl.UTF-8):	Nakładka graficzna dla aconnect
 Name:		kaconnect
 Version:	1.1.1
 Release:	0.2
