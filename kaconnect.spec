@@ -12,7 +12,7 @@ Patch0:		%{name}-paths_and_flags.patch
 URL:		http://www.suse.de/~mana/kalsatools.html
 BuildRequires:	alsa-lib-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	qt-devel >= 6:3.0.5
 Requires:	alsa-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
