@@ -5,5 +5,5 @@ Comment[pl]=Nakładka graficzna na aconnect
 Exec=/usr/bin/kaconnect
 Terminal=false
 Type=Application
-Categories=Application;AudioVideo;
+Categories=AudioVideo;
 # vi: encoding=utf-8
